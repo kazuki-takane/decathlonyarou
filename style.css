@@ -1,4 +1,9 @@
 @charset "UTF-8";
+
+/*
+Theme Name: decathlonyarou
+*/
+
 /*===================================================================
 共通部分
 ==================================================================*/
@@ -166,7 +171,7 @@ header {
   transform: translateY(-50%);
   width: 14px;
   height: 14px;
-  background: url(../img/folder-regular.svg) no-repeat center center;
+  background: url(img/folder-regular.svg) no-repeat center center;
   background-size: contain;
 }
 .drawer-brand:hover {
@@ -177,7 +182,7 @@ header {
 mv
 ==================================================================*/
 .mv {
-  background: url(../img/mv.jpg) no-repeat center center;
+  background: url(img/mv.jpg) no-repeat center center;
   background-size: cover;
   height: 500px;
   position: relative;
@@ -434,7 +439,7 @@ grid-aside
   transform: translateY(-50%);
   width: 14px;
   height: 14px;
-  background: url(../img/folder-regular.svg) no-repeat center center;
+  background: url(img/folder-regular.svg) no-repeat center center;
   background-size: contain;
 }
 .aside__list--title:hover {
@@ -464,7 +469,7 @@ grid-aside
   transform: translateY(-50%);
   width: 10px;
   height: 14px;
-  background: url(../img/file-regular.svg) no-repeat center center;
+  background: url(img/file-regular.svg) no-repeat center center;
   background-size: contain;
 }
 .aside__list--menu li a:hover {
@@ -649,19 +654,19 @@ articleページ
   height: 14px;
 }
 .practice-place::before {
-  background: url(../img/location-dot-solid.svg) no-repeat top center;
+  background: url(img/location-dot-solid.svg) no-repeat top center;
 }
 
 .practice-start::before {
-  background: url(../img/clock-regular.svg) no-repeat top center;
+  background: url(img/clock-regular.svg) no-repeat top center;
 }
 
 .practice-end::before {
-  background: url(../img/clock-solid.svg) no-repeat top center;
+  background: url(img/clock-solid.svg) no-repeat top center;
 }
 
 .practice-menu::before {
-  background: url(../img/square-minus-regular.svg) no-repeat top center;
+  background: url(img/square-minus-regular.svg) no-repeat top center;
 }
 
 .diary__feedback .feedback {
