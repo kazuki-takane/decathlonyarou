@@ -14,14 +14,14 @@
 <header>
     <div class="header__container">
         <div class="header__left">
-            <h1 class="my-logo"><a href="/">十種競技野郎BLOG</a></h1>
+            <h1 class="my-logo"><a href="<?php echo esc_url(home_url()); ?>">十種競技野郎BLOG</a></h1>
         </div>
         <div class="header__right">
             <nav class="header__nav">
                 <ul class="header__list">
-                    <li><a href="articles/index.html">記事</a></li>
+                    <li><a href="<?php echo esc_url(home_url()); ?>/articles">記事</a></li>
                     <li><a href="diary/index.html">練習日誌</a></li>
-                    <li><a href="profile/index.html">プロフィール</a></li>
+                    <li><a href="<?php echo esc_url(get_template_directory_uri()); ?>/profile">プロフィール</a></li>
                 </ul>
             </nav>
         </div>

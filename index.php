@@ -14,7 +14,7 @@
                             <div class="section__item">
                                 <a href="articles/article/index.html" class="section__item--wrapper">
                                     <div class="section__item--img">
-                                        <img src="<? echo get_template_directory_uri(); ?>/img/kuma_2.jpg" alt="">
+                                        <img src="<? echo esc_url(get_template_directory_uri()); ?>/img/kuma_2.jpg" alt="">
                                         <span class="category">練習</span>
                                     </div>
                                     <p class="section__item--title">今年の振り返り</p>
@@ -24,7 +24,7 @@
                             <div class="section__item">
                                 <a href="articles/article/index.html" class="section__item--wrapper">
                                     <div class="section__item--img">
-                                        <img src="<? echo get_template_directory_uri(); ?>/img/kuma.jpg" alt="">
+                                        <img src="<? echo esc_url(get_template_directory_uri()); ?>/img/kuma.jpg" alt="">
                                         <span class="category">練習</span>
                                     </div>
                                     <p class="section__item--title">今年の振り返り</p>
@@ -34,7 +34,7 @@
                             <div class="section__item">
                                 <a href="articles/article/index.html" class="section__item--wrapper">
                                     <div class="section__item--img">
-                                        <img src="<? echo get_template_directory_uri(); ?>/img/kuma_2.jpg" alt="">
+                                        <img src="<? echo esc_url(get_template_directory_uri()); ?>/img/kuma_2.jpg" alt="">
                                         <span class="category">練習</span>
                                     </div>
                                     <p class="section__item--title">今年の振り返り</p>
@@ -44,7 +44,7 @@
                             <div class="section__item">
                                 <a href="articles/article/index.html" class="section__item--wrapper">
                                     <div class="section__item--img">
-                                        <img src="<? echo get_template_directory_uri(); ?>/img/kuma.jpg" alt="">
+                                        <img src="<? echo esc_url(get_template_directory_uri()); ?>/img/kuma.jpg" alt="">
                                         <span class="category">練習</span>
                                     </div>
                                     <p class="section__item--title">今年の振り返り</p>
@@ -60,7 +60,7 @@
                             <div class="section__item">
                                 <a href="articles/article/index.html" class="section__item--wrapper">
                                     <div class="section__item--img">
-                                        <img src="<? echo get_template_directory_uri(); ?>/img/kuma_2.jpg" alt="">
+                                        <img src="<? echo esc_url(get_template_directory_uri()); ?>/img/kuma_2.jpg" alt="">
                                         <span class="category">練習</span>
                                     </div>
                                     <p class="section__item--title">今年の振り返り</p>
@@ -70,7 +70,7 @@
                             <div class="section__item">
                                 <a href="articles/article/index.html" class="section__item--wrapper">
                                     <div class="section__item--img">
-                                        <img src="<? echo get_template_directory_uri(); ?>/img/kuma.jpg" alt="">
+                                        <img src="<? echo esc_url(get_template_directory_uri()); ?>/img/kuma.jpg" alt="">
                                         <span class="category">練習</span>
                                     </div>
                                     <p class="section__item--title">今年の振り返り</p>
@@ -80,7 +80,7 @@
                             <div class="section__item">
                                 <a href="articles/article/index.html" class="section__item--wrapper">
                                     <div class="section__item--img">
-                                        <img src="<? echo get_template_directory_uri(); ?>/img/kuma_2.jpg" alt="">
+                                        <img src="<? echo esc_url(get_template_directory_uri()); ?>/img/kuma_2.jpg" alt="">
                                         <span class="category">練習</span>
                                     </div>
                                     <p class="section__item--title">今年の振り返り</p>
@@ -90,7 +90,7 @@
                             <div class="section__item">
                                 <a href="articles/article/index.html" class="section__item--wrapper">
                                     <div class="section__item--img">
-                                        <img src="<? echo get_template_directory_uri(); ?>/img/kuma.jpg" alt="">
+                                        <img src="<? echo esc_url(get_template_directory_uri()); ?>/img/kuma.jpg" alt="">
                                         <span class="category">練習</span>
                                     </div>
                                     <p class="section__item--title">今年の振り返り</p>
