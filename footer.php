@@ -3,7 +3,7 @@
             <div class="footer__left">
                 <ul class="footer__nav">
                     <li><a href="<?php echo esc_url(home_url()); ?>/articles">記事</a></li>
-                    <li><a href="diary/index.html">練習日誌</a></li>
+                    <li><a href="<?php echo esc_url(home_url()); ?>/diary">練習日誌</a></li>
                     <li><a href="<?php echo esc_url(home_url()); ?>/profile">プロフィール</a></li>
                 </ul>
                 <p class="copyright">copyright 2022 十種競技野郎BLOG</p>

@@ -41,10 +41,32 @@
     function post_has_archive( $args, $post_type ) {
         if ( 'post' == $post_type ) {
             $args['rewrite'] = true;
-            $args['has_archive'] = 'articles'; //記事一覧ページのスラッグ名
+            $args['label'] = '記事一覧'; //アーカイブページのラベル名
+            $args['has_archive'] = 'articles'; //アーカイブページのスラッグ名
         }
         return $args;
         }
         add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
 
+
+        //archive.phpのパンくずリストに記事一覧を表示する
+
+        // function my_static_breadcrumb_adder( $breadcrumb_trail ) {
+
+        //     if (is_post_type_archive('post')) { // デフォルトの投稿一覧ページの場合
+          
+        //       $item = new bcn_breadcrumb('任意の名前', null, array('post'));
+          
+        //     } elseif (get_post_type() === 'post') { // デフォルトの投稿ページの場合
+          
+        //       $item = new bcn_breadcrumb('任意の名前', null, array('post'), home_url('archives.phpのスラッグ名/'), null, true);
+          
+        //     }
+          
+        //     $stuck = array_pop( $breadcrumb_trail->breadcrumbs ); // HOME 一時退避
+        //     $breadcrumb_trail->breadcrumbs[] = $item; // 任意の名前 追加
+        //     $breadcrumb_trail->breadcrumbs[] = $stuck; // HOME 戻す
+          
+        //   }
+        //   add_action('bcn_after_fill', 'my_static_breadcrumb_adder');
 ?>
