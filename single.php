@@ -15,6 +15,7 @@
                 </div>
                 <div class="main-container article-container">
                     <section class="main__section">
+                        <?php the_content(); ?>
                         <div class="diary__block">
                             <h2 class="section__heading">1月21日</h2>
                             <dl class="diary__list">

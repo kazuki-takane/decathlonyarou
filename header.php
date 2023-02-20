@@ -18,11 +18,21 @@
         </div>
         <div class="header__right">
             <nav class="header__nav">
-                <ul class="header__list">
+                <!-- <ul class="header__list">
                     <li><a href="<?php echo esc_url(home_url()); ?>/articles">記事</a></li>
                     <li><a href="<?php echo esc_url(home_url()); ?>/diary">練習日誌</a></li>
                     <li><a href="<?php echo esc_url(get_template_directory_uri()); ?>/profile">プロフィール</a></li>
-                </ul>
+                </ul> -->
+            <?php
+                wp_nav_menu(
+                    array(
+                        'depth' => 1,  //出力するメニュー階層の上限。0で全階層を表示
+                        'theme_location' => 'global', // register_nav_menusで定義したメニュー位置の識別子
+                        'container' => false,  //メニューのulタグを囲むタグを指定できる(divかnav)。falseでなし。
+                        'menu_class' => 'header__list'  //メニューのulに割り当てるクラス名
+                    )
+                );
+            ?>
             </nav>
         </div>
     </div>

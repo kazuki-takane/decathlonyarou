@@ -15,7 +15,7 @@
                                 <a href="" class="section__item--wrapper">
                                     <div class="section__item--img diary-item__img">
                                         <img src="../img/kuma_2.jpg" alt="">
-                                        <span class="category">練習</span>
+                                        <span class="article-year_and_month">練習</span>
                                     </div>
                                     <p class="section__item--title">今年の振り返り</p>
                                     <time class="section__item--datetime">2022.12.20</time>
@@ -25,7 +25,7 @@
                                 <a href="" class="section__item--wrapper">
                                     <div class="section__item--img diary-item__img">
                                         <img src="../img/kuma.jpg" alt="">
-                                        <span class="category">練習</span>
+                                        <span class="article-year_and_month">練習</span>
                                     </div>
                                     <p class="section__item--title">今年の振り返り</p>
                                     <time class="section__item--datetime">2022.12.20</time>
@@ -35,7 +35,7 @@
                                 <a href="" class="section__item--wrapper">
                                     <div class="section__item--img diary-item__img">
                                         <img src="../img/kuma_2.jpg" alt="">
-                                        <span class="category">練習</span>
+                                        <span class="article-year_and_month">練習</span>
                                     </div>
                                     <p class="section__item--title">今年の振り返り</p>
                                     <time class="section__item--datetime">2022.12.20</time>
@@ -44,7 +44,7 @@
                             <div class="section__item diary__item">
                                 <a href="" class="section__item--wrapper">
                                     <div class="section__item--img diary-item__img"><img src="../img/kuma.jpg" alt="">
-                                        <span class="category">練習</span>
+                                        <span class="article-year_and_month">練習</span>
                                     </div>
                                     <p class="section__item--title">今年の振り返り</p>
                                     <time class="section__item--datetime">2022.12.20</time>
@@ -54,7 +54,7 @@
                                 <a href="" class="section__item--wrapper">
                                     <div class="section__item--img diary-item__img">
                                         <img src="../img/kuma_2.jpg" alt="">
-                                        <span class="category">練習</span>
+                                        <span class="article-year_and_month">練習</span>
                                     </div>
                                     <p class="section__item--title">今年の振り返り</p>
                                     <time class="section__item--datetime">2022.12.20</time>
@@ -64,7 +64,7 @@
                                 <a href="" class="section__item--wrapper">
                                     <div class="section__item--img diary-item__img">
                                         <img src="../img/kuma.jpg" alt="">
-                                        <span class="category">練習</span>
+                                        <span class="article-year_and_month">練習</span>
                                     </div>
                                     <p class="section__item--title">今年の振り返り</p>
                                     <time class="section__item--datetime">2022.12.20</time>
@@ -74,7 +74,7 @@
                                 <a href="" class="section__item--wrapper">
                                     <div class="section__item--img diary-item__img">
                                         <img src="../img/kuma_2.jpg" alt="">
-                                        <span class="category">練習</span>
+                                        <span class="article-year_and_month">練習</span>
                                     </div>
                                     <p class="section__item--title">今年の振り返り</p>
                                     <time class="section__item--datetime">2022.12.20</time>
@@ -83,7 +83,7 @@
                             <div class="section__item diary__item">
                                 <a href="" class="section__item--wrapper">
                                     <div class="section__item--img diary-item__img"><img src="../img/kuma.jpg" alt="">
-                                        <span class="category">練習</span>
+                                        <span class="article-year_and_month">練習</span>
                                     </div>
                                     <p class="section__item--title">今年の振り返り</p>
                                     <time class="section__item--datetime">2022.12.20</time>
