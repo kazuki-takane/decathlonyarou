@@ -74,7 +74,6 @@
                                     <time class="section__item--datetime"><?php the_time('Y年m月d日'); ?></time>
                                 </a>
                             </div>
-
                             <?php
                             endwhile;
                             endif;

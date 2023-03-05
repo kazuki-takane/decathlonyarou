@@ -18,11 +18,6 @@
         </div>
         <div class="header__right">
             <nav class="header__nav">
-                <!-- <ul class="header__list">
-                    <li><a href="<?php echo esc_url(home_url()); ?>/articles">記事</a></li>
-                    <li><a href="<?php echo esc_url(home_url()); ?>/diary">練習日誌</a></li>
-                    <li><a href="<?php echo esc_url(get_template_directory_uri()); ?>/profile">プロフィール</a></li>
-                </ul> -->
             <?php
                 wp_nav_menu(
                     array(

@@ -18,25 +18,25 @@
                         <h2 class="section__heading">記事一覧</h2>
                         <div class="section__items">
                             <?php
-                            if ( have_posts() ) :
-                            while ( have_posts() ) :
-                            the_post();
+                                if ( have_posts() ) :
+                                while ( have_posts() ) :
+                                the_post();
                             ?>
                             <div class="section__item">
                                 <a href="<?php the_permalink(); ?>" class="section__item--wrapper">
                                     <div class="section__item--img">
                                         <?php
-                                        if(has_post_thumbnail()):
-                                            the_post_thumbnail();
+                                            if(has_post_thumbnail()):
+                                                the_post_thumbnail();
                                         ?>
                                         <?php else :?>
                                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/kuma_2.jpg" alt="">
                                         <?php endif; ?>
                                         <span class="article-category">
                                             <?php
-                                            $cat = get_the_category();
-                                            $cat = $cat[0];
-                                            echo get_cat_name($cat->term_id);
+                                                $cat = get_the_category();
+                                                $cat = $cat[0];
+                                                echo get_cat_name($cat->term_id);
                                             ?>
                                         </span>
                                     </div>
