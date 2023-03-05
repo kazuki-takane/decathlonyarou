@@ -15,7 +15,7 @@
                 </div>
                 <div class="main-container">
                     <section class="main__section">
-                        <h2 class="section__heading">練習日誌</h2>
+                        <h2 class="section__heading"><?php post_type_archive_title(); ?></h2>
                         <div class="section__items">
                             <?php
                                 $diary_query = new WP_Query(

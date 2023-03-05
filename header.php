@@ -38,10 +38,15 @@
     </button>
     <!-- ナビゲーションの中身 -->
     <nav class="drawer-nav">
-        <ul class="drawer-menu">
-            <li><a class="drawer-brand" href="articles/index.html">記事</a></li>
-            <li><a class="drawer-brand" href="diary/index.html">練習日誌</a></li>
-            <li><a class="drawer-brand" href="profile/index.html">プロフィール</a></li>
-        </ul>
+        <?php
+            wp_nav_menu(
+                array(
+                    'depth' => 1,  //出力するメニュー階層の上限。0で全階層を表示
+                    'theme_location' => 'drawer', // register_nav_menusで定義したメニュー位置の識別子
+                    'container' => false,  //メニューのulタグを囲むタグを指定できる(divかnav)。falseでなし。
+                    'menu_class' => 'drawer-menu'  //メニューのulに割り当てるクラス名
+                )
+            );
+        ?>
     </nav>
 </header>

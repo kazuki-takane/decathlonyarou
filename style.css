@@ -189,17 +189,22 @@ header {
   right: 10px;
 }
 
-.drawer-brand {
+.drawer-menu a {
   font-size: 16px;
   position: relative;
   padding-left: 20px;
   margin: 0 10px;
   display: block;
+  line-height: 3.75rem;
+  font-weight: 700;
   cursor: pointer;
   transition: padding-left 0.2s;
   border-bottom: 1px solid rgba(242, 52, 43, 0.4);
 }
-.drawer-brand::before {
+
+.drawer-brand {
+}
+.drawer-menu a::before {
   position: absolute;
   content: "";
   top: 50%;
@@ -210,8 +215,12 @@ header {
   background: url(img/folder-regular.svg) no-repeat center center;
   background-size: contain;
 }
-.drawer-brand:hover {
+.drawer-brand::before {
+}
+.drawer-menu a:hover {
   padding-left: 24px;
+}
+.drawer-brand:hover {
 }
 
 /*===================================================================
@@ -602,6 +611,7 @@ footer {
 .footer__sns img {
   width: 100%;
   height: auto;
+  vertical-align: bottom;
   transition: transform 0.2s;
 }
 .footer__sns img:hover {

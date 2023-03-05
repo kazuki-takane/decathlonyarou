@@ -98,4 +98,20 @@
           return;
         }
       });
+
+
+      add_filter( 'get_the_archive_title', function($title){
+        if(is_category()){ // カテゴリーページ
+            $title = single_cat_title('', false);
+        } elseif(is_tag()){ // タグページ
+            $title = single_tag_title('', false);
+        } elseif(is_tax()){ // タクソノミーページ
+            $title = single_term_title('', false);
+        } elseif(is_post_type_archive()){ //カスタム投稿タイプアーカイブページ
+            $title = post_type_archive_title('', false);
+        }
+        return $title;
+    });
+
+
 ?>

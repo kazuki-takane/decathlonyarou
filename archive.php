@@ -15,7 +15,7 @@
             </div>
                 <div class="main-container">
                     <section class="main__section">
-                        <h2 class="section__heading">記事一覧</h2>
+                        <h2 class="section__heading"><?php echo get_the_archive_title(); ?></h2>
                         <div class="section__items">
                             <?php
                                 if ( have_posts() ) :
@@ -50,17 +50,17 @@
                             ?>
                         </div>
                         <div class="pagination">
-                        <?php if(paginate_links()) : //ページが1ページ以上あれば以下を表示 ?>
-                        <?php
-                        echo paginate_links(
-                            array(
-                            'end_size' => 1,
-                            'mid_size' => 1,
-                            'prev_next' => true,
-                            )
-                        );
-                        ?>
-                        <?php endif; ?>
+                            <?php if(paginate_links()) : //ページが1ページ以上あれば以下を表示 ?>
+                            <?php
+                            echo paginate_links(
+                                array(
+                                'end_size' => 1,
+                                'mid_size' => 1,
+                                'prev_next' => true,
+                                )
+                            );
+                            ?>
+                            <?php endif; ?>
                         </div>
                     </section>
                 </div>

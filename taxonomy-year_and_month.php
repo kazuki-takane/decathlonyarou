@@ -6,91 +6,60 @@
     <main>
         <div class="grid-container">
             <div class="grid-main">
-                <div class="breadcrumb">パンくずリスト</div>
+                <div class="breadcrumb">
+                    <?php
+                        if ( function_exists( 'bcn_display' ) ) {
+                            bcn_display();
+                        }
+                    ?>
+                </div>
                 <div class="main-container">
                     <section class="main__section">
-                        <h2 class="section__heading">練習日誌</h2>
+                        <h2 class="section__heading"><?php single_term_title(); ?></h2>
                         <div class="section__items">
-                            <div class="section__item diary__item">
-                                <a href="" class="section__item--wrapper">
-                                    <div class="section__item--img diary-item__img">
-                                        <img src="../img/kuma_2.jpg" alt="">
-                                        <span class="article-year_and_month">練習</span>
+                            <?php
+                                if ( have_posts() ) :
+                                while ( have_posts() ) :
+                                the_post();
+                            ?>
+                            <div class="section__item">
+                                <a href="<?php the_permalink(); ?>" class="section__item--wrapper">
+                                    <div class="section__item--img">
+                                        <?php
+                                            if(has_post_thumbnail()):
+                                                the_post_thumbnail();
+                                        ?>
+                                        <?php else :?>
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/kuma_2.jpg" alt="">
+                                        <?php endif; ?>
+                                        <span class="article-category">
+                                            <?php
+                                                $terms = get_the_terms($post->id, 'year_and_month');
+                                                echo $terms[0]->name;
+                                            ?>
+                                        </span>
                                     </div>
-                                    <p class="section__item--title">今年の振り返り</p>
-                                    <time class="section__item--datetime">2022.12.20</time>
+                                    <p class="section__item--title"><?php the_title(); ?></p>
                                 </a>
                             </div>
-                            <div class="section__item diary__item">
-                                <a href="" class="section__item--wrapper">
-                                    <div class="section__item--img diary-item__img">
-                                        <img src="../img/kuma.jpg" alt="">
-                                        <span class="article-year_and_month">練習</span>
-                                    </div>
-                                    <p class="section__item--title">今年の振り返り</p>
-                                    <time class="section__item--datetime">2022.12.20</time>
-                                </a>
-                            </div>
-                            <div class="section__item diary__item">
-                                <a href="" class="section__item--wrapper">
-                                    <div class="section__item--img diary-item__img">
-                                        <img src="../img/kuma_2.jpg" alt="">
-                                        <span class="article-year_and_month">練習</span>
-                                    </div>
-                                    <p class="section__item--title">今年の振り返り</p>
-                                    <time class="section__item--datetime">2022.12.20</time>
-                                </a>
-                            </div>
-                            <div class="section__item diary__item">
-                                <a href="" class="section__item--wrapper">
-                                    <div class="section__item--img diary-item__img"><img src="../img/kuma.jpg" alt="">
-                                        <span class="article-year_and_month">練習</span>
-                                    </div>
-                                    <p class="section__item--title">今年の振り返り</p>
-                                    <time class="section__item--datetime">2022.12.20</time>
-                                </a>
-                            </div>
-                            <div class="section__item diary__item">
-                                <a href="" class="section__item--wrapper">
-                                    <div class="section__item--img diary-item__img">
-                                        <img src="../img/kuma_2.jpg" alt="">
-                                        <span class="article-year_and_month">練習</span>
-                                    </div>
-                                    <p class="section__item--title">今年の振り返り</p>
-                                    <time class="section__item--datetime">2022.12.20</time>
-                                </a>
-                            </div>
-                            <div class="section__item diary__item">
-                                <a href="" class="section__item--wrapper">
-                                    <div class="section__item--img diary-item__img">
-                                        <img src="../img/kuma.jpg" alt="">
-                                        <span class="article-year_and_month">練習</span>
-                                    </div>
-                                    <p class="section__item--title">今年の振り返り</p>
-                                    <time class="section__item--datetime">2022.12.20</time>
-                                </a>
-                            </div>
-                            <div class="section__item diary__item">
-                                <a href="" class="section__item--wrapper">
-                                    <div class="section__item--img diary-item__img">
-                                        <img src="../img/kuma_2.jpg" alt="">
-                                        <span class="article-year_and_month">練習</span>
-                                    </div>
-                                    <p class="section__item--title">今年の振り返り</p>
-                                    <time class="section__item--datetime">2022.12.20</time>
-                                </a>
-                            </div>
-                            <div class="section__item diary__item">
-                                <a href="" class="section__item--wrapper">
-                                    <div class="section__item--img diary-item__img"><img src="../img/kuma.jpg" alt="">
-                                        <span class="article-year_and_month">練習</span>
-                                    </div>
-                                    <p class="section__item--title">今年の振り返り</p>
-                                    <time class="section__item--datetime">2022.12.20</time>
-                                </a>
-                            </div>
+                            <?php
+                                endwhile; 
+                                endif;
+                            ?>
                         </div>
-                        <div class="pagination">pagination</div>
+                        <div class="pagination">
+                        <?php if(paginate_links()) : //ページが1ページ以上あれば以下を表示 ?>
+                            <?php
+                            echo paginate_links(
+                                array(
+                                'end_size' => 1,
+                                'mid_size' => 1,
+                                'prev_next' => true,
+                                )
+                            );
+                            ?>
+                            <?php endif; ?>
+                        </div>
                     </section>
                 </div>
             </div>
