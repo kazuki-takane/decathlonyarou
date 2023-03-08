@@ -11,10 +11,10 @@
                         )
                     );
                 ?>
-                <p class="copyright">copyright 2022 十種競技野郎BLOG</p>
+                <p class="copyright">copyright 2023 十種競技野郎BLOG</p>
             </div>
             <div class="footer__right">
-                <div class="footer__sns"><a href="https://www.youtube.com/channel/UCy-bOGF9tJRKprD2YhbfNFA" target="_blank" rel="noopener noreferrer"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/youtube.png" alt="YouTube"></a></div>
+                <div class="footer__sns"><a href="https://www.youtube.com/channel/UCy-bOGF9tJRKprD2YhbfNFA" target="_blank" rel="noopener noreferrer"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/youtube.png" alt="YouTube" width="30" height="30"></a></div>
             </div>
         </div>
     </footer>

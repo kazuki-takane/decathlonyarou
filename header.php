@@ -41,7 +41,7 @@
         <?php
             wp_nav_menu(
                 array(
-                    'depth' => 1,  //出力するメニュー階層の上限。0で全階層を表示
+                    'depth' => 2,  //出力するメニュー階層の上限。0で全階層を表示
                     'theme_location' => 'drawer', // register_nav_menusで定義したメニュー位置の識別子
                     'container' => false,  //メニューのulタグを囲むタグを指定できる(divかnav)。falseでなし。
                     'menu_class' => 'drawer-menu'  //メニューのulに割り当てるクラス名

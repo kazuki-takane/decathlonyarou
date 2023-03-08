@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-    <div class="mv">
+    <div class="mv mv-top">
         <p class="mv-title">十種競技野郎BLOG</p>
     </div>
     <main>
@@ -9,7 +9,7 @@
             <div class="grid-main">
                 <div class="main-container">
                     <section class="main__section">
-                        <h2 class="section__heading">記事一覧</h2>
+                        <h2 class="section__heading">記事</h2>
                         <div class="section__items">
                             <?php
                             if ( have_posts() ) :
@@ -21,10 +21,10 @@
                                     <div class="section__item--img">
                                         <?php
                                         if(has_post_thumbnail()):
-                                            the_post_thumbnail();
+                                            the_post_thumbnail('post-thumbnail', array("alt" => get_the_title()));
                                         ?>
                                         <?php else :?>
-                                        <img src="<? echo esc_url(get_template_directory_uri()); ?>/img/kuma_2.jpg" alt="">
+                                        <img src="<? echo esc_url(get_template_directory_uri()); ?>/img/mv-article.jpg" alt="<?php the_title(); ?>">
                                         <?php endif; ?>
                                         <span class="article-category">
                                             <?php
@@ -62,7 +62,13 @@
                             <div class="section__item">
                                 <a href="<?php the_permalink(); ?>" class="section__item--wrapper">
                                     <div class="section__item--img">
-                                        <img src="<? echo esc_url(get_template_directory_uri()); ?>/img/kuma_2.jpg" alt="">
+                                        <?php
+                                            if(has_post_thumbnail()):
+                                                the_post_thumbnail('post-thumbnail', array("alt" => get_the_title()));
+                                        ?>
+                                        <?php else :?>
+                                        <img src="<? echo esc_url(get_template_directory_uri()); ?>/img/mv-practice.jpg" alt="<?php the_title(); ?>">
+                                        <?php endif; ?>
                                         <span class="article-category">
                                         <?php
                                             $terms = get_the_terms($post->id, 'year_and_month');
@@ -71,7 +77,6 @@
                                         </span>
                                     </div>
                                     <p class="section__item--title"><?php the_title(); ?></p>
-                                    <time class="section__item--datetime"><?php the_time('Y年m月d日'); ?></time>
                                 </a>
                             </div>
                             <?php

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-    <div class="mv">
+    <div class="mv mv-practice">
         <p class="mv-title">十種競技野郎BLOG</p>
     </div>
     <main>

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-    <div class="mv">
+    <div class="mv mv-profile">
         <p class="mv-title">十種競技野郎BLOG</p>
     </div>
     <main>
@@ -10,7 +10,7 @@
                     <section class="main__section">
                         <h2 class="section__heading">プロフィール</h2>
                         <div class="profile-contents">
-                            <div class="profile__img"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/portfolio.jpg" alt="プロフィール"></div>
+                            <div class="profile__img"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/portfolio.jpg" alt="プロフィール" width="255" height="340"></div>
                             <div class="profile__text">
                                 <div class="profile__block">
                                     <h3 class="profile__heading">競技歴</h3>

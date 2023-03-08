@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-    <div class="mv">
+    <div class="mv mv-article">
         <p class="mv-title">十種競技野郎BLOG</p>
     </div>
     <main>
@@ -27,10 +27,10 @@
                                     <div class="section__item--img">
                                         <?php
                                             if(has_post_thumbnail()):
-                                                the_post_thumbnail();
+                                                the_post_thumbnail('post-thumbnail', array("alt" => get_the_title()));
                                         ?>
                                         <?php else :?>
-                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/kuma_2.jpg" alt="">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/mv-article.jpg" alt="<?php the_title(); ?>">
                                         <?php endif; ?>
                                         <span class="article-category">
                                             <?php
@@ -41,7 +41,7 @@
                                         </span>
                                     </div>
                                     <p class="section__item--title"><?php the_title(); ?></p>
-                                    <time class="section__item--datetime"><?php the_time(); ?></time>
+                                    <time class="section__item--datetime"><?php the_time('Y年m月d日'); ?></time>
                                 </a>
                             </div>
                             <?php
