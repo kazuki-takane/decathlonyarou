@@ -329,6 +329,11 @@ grid-main
 .breadcrumb {
   margin: 20px 0 0 20px;
 }
+@media (max-width: 767px) {
+  .breadcrumb {
+    margin: 8px 0 0 12px;
+  }
+}
 
 .main-container {
   padding: 60px;
@@ -680,7 +685,7 @@ articleページ
 
 .diary__list {
   border-bottom: 1px solid rgba(51, 51, 51, 0.2);
-  margin-bottom: 10px;
+  margin-bottom: 24px;
 }
 
 .diary__list--item {
@@ -701,6 +706,9 @@ articleページ
   width: 14px;
   height: 14px;
 }
+.diary__list--item dd {
+  max-width: calc(100% - 150px);
+}
 .practice-place::before {
   background: url(img/location-dot-solid.svg) no-repeat top center;
 }
@@ -717,16 +725,12 @@ articleページ
   background: url(img/square-minus-regular.svg) no-repeat top center;
 }
 
-.diary__feedback .feedback {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
 .diary__feedback .memo {
   font-size: 20px;
   margin-bottom: 20px;
 }
 .diary__feedback p {
-  margin-bottom: 6px;
+  margin-bottom: 1em;
 }
 .diary__feedback video {
   width: 100%;
@@ -799,4 +803,23 @@ profileページ
   .profile__btn {
     margin-inline: auto;
   }
+}
+
+/*==========================================================================
+追加css
+==========================================================================*/
+
+.wp-block-video figcaption {
+  margin-top: 0;
+  font-size: 14px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .wp-block-video figcaption {
+    font-size: 12px;
+  }
+}
+
+.wp-block-video {
+  margin-bottom: 2em;
 }

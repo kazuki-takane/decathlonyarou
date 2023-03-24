@@ -60,7 +60,6 @@
                                 </div>
                             </dl>
                             <div class="diary__feedback">
-                                <h3 class="feedback">振り返り</h3>
                                 <?php the_content(); ?>
                             </div>
                         </div>
