@@ -91,13 +91,13 @@
         }
         if ( is_archive() ) {
             $query->set('posts_per_page', 10 );
-            $query->set('meta_key', 'practice-date');
-            $query->set('orderby', 'meta_value');
-            $query->set('order', 'DESC');
             return;
         }
         if ( is_post_type_archive('diary') ) {
             $query->set('posts_per_page', 10 );
+            $query->set('meta_key', 'practice-date');
+            $query->set('orderby', 'meta_value');
+            $query->set('order', 'DESC');
             return;
         }
       });

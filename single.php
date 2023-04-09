@@ -15,6 +15,12 @@
                 </div>
                 <div class="main-container article-container">
                     <section class="main__section">
+                        <h2 class="section__heading"><?php the_title(); ?></h2>
+                        <?php
+                            if(has_post_thumbnail()) {
+                                the_post_thumbnail('post-thumbnail', array("alt" => get_the_title()));
+                            }
+                        ?>
                         <?php the_content(); ?>
                     </section>
                 </div>
