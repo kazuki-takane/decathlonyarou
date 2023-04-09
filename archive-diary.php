@@ -18,15 +18,9 @@
                         <h2 class="section__heading"><?php post_type_archive_title(); ?></h2>
                         <div class="section__items">
                             <?php
-                                $diary_query = new WP_Query(
-                                    array(
-                                        'post_type'      => 'diary',
-                                        'posts_per_page' => 10,
-                                    )
-                                );
-                                if($diary_query->have_posts()):
-                                while($diary_query->have_posts()):
-                                    $diary_query->the_post();
+                                if ( have_posts() ) :
+                                while ( have_posts() ) :
+                                the_post();
                             ?>
                             <div class="section__item">
                                 <a href="<?php the_permalink(); ?>" class="section__item--wrapper">
@@ -51,7 +45,6 @@
                             <?php
                                 endwhile;
                                 endif;
-                                wp_reset_postdata();
                             ?>
                         </div>
                         <div class="pagination">

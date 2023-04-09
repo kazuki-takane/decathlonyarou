@@ -823,3 +823,7 @@ profileページ
 .wp-block-video {
   margin-bottom: 2em;
 }
+
+.main__section p {
+  margin-bottom: 1em;
+}

@@ -53,6 +53,9 @@
                                 array(
                                     'post_type'      => 'diary',
                                     'posts_per_page' => 4,
+                                    'meta_key' => 'practice-date',
+                                    'orderby' => 'meta_value',
+                                    'order' => 'DESC'
                                 )
                             );
                             if($diary_query->have_posts()):

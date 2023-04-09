@@ -84,18 +84,21 @@
     add_action('init', 'my_menu_init');
 
 
-    // archiveページ、diary-archiveページのみ最大投稿表示数を10にする
+    // archiveページ、diary-archiveページのみ最大投稿表示数を10にし、日付順に並べる
     add_action( 'pre_get_posts', function( $query ){
         if ( is_admin() || ! $query->is_main_query() ) {
-          return;
+            return;
         }
         if ( is_archive() ) {
-          $query->set( 'posts_per_page', 10 );
-          return;
+            $query->set('posts_per_page', 10 );
+            $query->set('meta_key', 'practice-date');
+            $query->set('orderby', 'meta_value');
+            $query->set('order', 'DESC');
+            return;
         }
         if ( is_post_type_archive('diary') ) {
-          $query->set( 'posts_per_page', 10 );
-          return;
+            $query->set('posts_per_page', 10 );
+            return;
         }
       });
 
