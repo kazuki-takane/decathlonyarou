@@ -15,6 +15,7 @@ body {
 @media (max-width: 767px) {
   body {
     font-size: 14px;
+    word-wrap: break-word;
   }
 }
 
@@ -242,6 +243,7 @@ mv
   .mv-top {
     background: url(img/mv-top.jpg) no-repeat 44% 0% fixed;
     background-size: 200%;
+    margin-top: 60px;
   }
 }
 .mv-article {
@@ -829,10 +831,22 @@ profileページ
   font-size: 17px;
 }
 
+@media (max-width: 767px) {
+  .main__section p {
+    font-size: 14px;
+  }
+}
+
 .main__section h2 {
   font-size: 36px;
   margin-bottom: 1.4em;
   margin-top: 1.4em;
+}
+
+@media (max-width: 767px) {
+  .main__section h2 {
+    font-size: 24px;
+  }
 }
 
 .main__section h3 {
@@ -842,15 +856,27 @@ profileページ
   border-bottom: 2px solid rgba(3,3, 3, 0.2);
 }
 
+@media (max-width: 767px) {
+  .main__section h3 {
+    font-size: 20px;
+  }
+}
+
 .main__section h4 {
   font-size: 23px;
   margin-bottom: 1.4em;
   margin-top: 1.4em;
 }
 
+@media (max-width: 767px) {
+  .main__section h4 {
+    font-size: 18px;
+  }
+}
+
 .main__section  img {
   width: 100%;
-  height: auto;
+  height: 100%;
   vertical-align: bottom;
 }
 

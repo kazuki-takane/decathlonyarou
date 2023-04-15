@@ -24,7 +24,7 @@
                                             the_post_thumbnail('post-thumbnail', array("alt" => get_the_title()));
                                         ?>
                                         <?php else :?>
-                                        <img src="<? echo esc_url(get_template_directory_uri()); ?>/img/mv-article.jpg" alt="<?php the_title(); ?>">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/mv-article.jpg" alt="<?php the_title(); ?>">
                                         <?php endif; ?>
                                         <span class="article-category">
                                             <?php
@@ -70,7 +70,7 @@
                                                 the_post_thumbnail('post-thumbnail', array("alt" => get_the_title()));
                                         ?>
                                         <?php else :?>
-                                        <img src="<? echo esc_url(get_template_directory_uri()); ?>/img/mv-practice.jpg" alt="<?php the_title(); ?>">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/mv-practice.jpg" alt="<?php the_title(); ?>">
                                         <?php endif; ?>
                                         <span class="article-category">
                                         <?php
