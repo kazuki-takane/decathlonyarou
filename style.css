@@ -234,6 +234,7 @@ mv
 @media (max-width: 767px) {
   .mv {
     height: 250px;
+    margin-top: 60px;
   }
 }
 .mv-top {
@@ -243,7 +244,6 @@ mv
   .mv-top {
     background: url(img/mv-top.jpg) no-repeat 44% 0% fixed;
     background-size: 200%;
-    margin-top: 60px;
   }
 }
 .mv-article {
